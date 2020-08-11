@@ -4,7 +4,8 @@ from easygui import enterbox, msgbox
 from scipy.signal import *
 import sys
 
-x=linspace(0,2*pi,1000)
+pas=1000
+x=linspace(0,2*pi,pas)
 
 def enter():   
     try:
@@ -35,7 +36,7 @@ ax2=f.add_subplot(212)
 ax2.plot(abs(ft)/max(ft),label='transformée de Fourier',color='r')
 ax2.set_xlabel("fréquence(Hz)")
 ax2.set_ylabel("|A|")
-ax2.set_xlim(0,500)
+ax2.set_xlim(0,pas/2)
 ft.sort()
 print(ft[-1:-5])
 
