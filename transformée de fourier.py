@@ -32,7 +32,7 @@ ax1.set_ylabel("signal")
 legend()
 
 ax2=f.add_subplot(212)
-ax2.plot(abs(ft),label='transformée de Fourier',color='r')
+ax2.plot(abs(ft)/max(ft),label='transformée de Fourier',color='r')
 ax2.set_xlabel("fréquence(Hz)")
 ax2.set_ylabel("|A|")
 ax2.set_xlim(0,500)
