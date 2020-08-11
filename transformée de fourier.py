@@ -1,7 +1,7 @@
 from matplotlib.pyplot import *
 from numpy import *
 from easygui import enterbox, msgbox
-from scipy.signal import *
+from scipy.signal import unit_impulse
 import sys
 
 x=linspace(0,2*pi,1000)
