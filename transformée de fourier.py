@@ -11,7 +11,6 @@ def enter():
         global y
         global sy
         sy=enterbox("Fonction y(x):")
-        print(sy)
         y=eval(sy)
     except:
         if sy!=None:
