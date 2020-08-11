@@ -36,7 +36,7 @@ ax2.set_xlabel("fréquence(Hz)")
 ax2.set_ylabel("Amplitude")
 ax2.set_xlim(0,100)
 ft.sort()
-print(ft[-1:-5])
+
 
 legend()
 show()
